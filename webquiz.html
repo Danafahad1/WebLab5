@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script>
+
+    function Ifcorrect() {
+
+      var selectedOption = document.querySelector('input[name="Answers"]:checked');
+
+      if (selectedOption && selectedOption.value === 'False') {
+
+        alert('Your answer is not correct');
+
+      } else {
+
+        alert('Your answer is correct');
+
+      }}
+  </script>
+</head>
+<body>
+  <form style=" background-color: rgb(255, 255, 0);">
+
+    <p>What is 70 + 30 </p>
+      <input type="radio" name="Answers" value="False">
+      64
+    <br>
+      <input type="radio" name="Answers" value="False">
+      76
+      <br>
+       <input type="radio" name="Answers" value="True">
+       66
+    <br>
+    <input type="button" value="Enter Answer" onclick="Ifcorrect()">
+  </form>
+</body>
+
+</html>
